@@ -5,15 +5,8 @@ public class Main {
     public static void main(String[] args) {
 
         /**
-         echo "# TriangularChecker" >> README.md
-         git init
-         git add README.md
-         git commit -m "first commit"
-         git branch -M main
-         git remote add origin https://github.com/EhsanRP/TriangularChecker.git
-         git push -u origin main@Param
+         @Input hardcoded matrix of all kinds
          **/
-
         int[][] upperTriangularMat = {
                 {1, 3, 5, 3},
                 {0, 4, 6, 2},

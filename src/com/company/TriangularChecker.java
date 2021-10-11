@@ -2,7 +2,11 @@ package com.company;
 
 public class TriangularChecker {
 
-
+    /**
+     * @param mat: dimensional matrix to check if is triangular
+     * @Logic First Checks if matrix is a square
+     * @Logic Second Checks if is Triangular
+     */
     public static void checkIfTriangular(int mat[][]) {
         if (checkSquare(mat)){
             if (isLowerTriangularMatrix(mat)) {
@@ -15,6 +19,12 @@ public class TriangularChecker {
         }
     }
 
+
+    /**
+     * @param mat: dimensional matrix to check if is triangular
+     * @Logic Checks if a matrix is suare
+     * @Return true if square false if not
+     */
     public static boolean checkSquare(int mat[][]) {
         var height = mat.length;
 
@@ -29,6 +39,11 @@ public class TriangularChecker {
         return true;
     }
 
+    /**
+     * @param mat: dimensional matrix to check if is triangular
+     * @Logic Checks if a matrix is Lower Triangular
+     * @Return true if Lower Triangular false if not
+     */
     public static boolean isLowerTriangularMatrix(int mat[][]) {
         int N = mat.length;
         for (int i = 0; i < N; i++)
@@ -39,6 +54,11 @@ public class TriangularChecker {
         return true;
     }
 
+    /**
+     * @param mat: dimensional matrix to check if is triangular
+     * @Logic Checks if a matrix is Upper Triangular
+     * @Return true if Upper Triangular false if not
+     */
     public static Boolean isUpperTriangularMatrix(int mat[][]) {
         int N = mat.length;
         for (int i = 1; i < N; i++)
